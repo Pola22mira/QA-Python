@@ -13,7 +13,7 @@ driver.maximize_window()
 driver.get("http://the-internet.herokuapp.com/add_remove_elements/")
 
 # пять раз кликнуть на кнопку Add Element
-button = driver.find_element(By.CSS_SELECTOR, '#content > div > button')  
+button = driver.find_element(By.CSS_SELECTOR, '[onclick="addElement()"]')  # исправила
 
 for i in range(1,6):
     if i <= 6:

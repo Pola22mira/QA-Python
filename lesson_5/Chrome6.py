@@ -8,12 +8,7 @@ driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install())
 
 driver.maximize_window()
 driver.get("http://the-internet.herokuapp.com/login")
-   
 sleep(3)
-
-field_username_locftor = '#username'
-field_password_locftor = '#password'
-button_locator = 'button.radius'
 
 input_field_username = driver.find_element(By.CSS_SELECTOR, '#username') 
 input_field_username.send_keys("tomsmith")

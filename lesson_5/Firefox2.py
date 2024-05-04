@@ -16,7 +16,7 @@ driver.maximize_window()
 
 driver.get("http://uitestingplayground.com/dynamicid")
 
-button = driver.find_element(By.CSS_SELECTOR, '.btn:not(:disabled):not(.disabled)') 
+button = driver.find_element(By.XPATH, '//button[text()="Button with Dynamic ID"]')
 for i in range(1,4):
     if i <= 4:
         button.send_keys(Keys.RETURN)
